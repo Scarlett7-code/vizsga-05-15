@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/*1.rész*/
+.first {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1138px) {
+  .first {
+    width: 75%;
+  }
+}
+.first > h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.first > p {
+  font-size: 16px;
+}
+.first > button {
+  color: white;
+  background-color: rgb(79, 70, 229);
+  padding: 12px 30px 12px 30px;
+  transition-duration: 0.5s;
+  border-radius: 7px;
+}
+.first > button:hover {
+  background-color: rgb(67, 56, 202);
+  transition-duration: 0.5s;
+}
+/*2. rész*/
+.second {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 176px));
+  grid-template-rows: repeat(2, 165px);
+  gap: 16px;
+  padding: 16px;
+}
+@media screen and (max-width: 600px) {
+  .second {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 176px));
+    grid-template-rows: repeat(3, 165px);
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid rgb(243, 244, 246);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.card:hover {
+  border-color: rgb(229, 231, 235);
+}
+.card > h1 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.card > p {
+  font-size: 14px;
+}
+.card > img {
+  background-color: rgb(249, 250, 251);
+  border-radius: 10px;
+  height: 15%;
+  width: 15%;
+  padding: 10px;
+}
+/*3.rész*/
+.third {
+  margin-top: 32px;
+  width: max(512px);
+  text-align: center;
+  color: rgb(107, 114, 128);
+}
+.third > h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+.third > p {
+  font-size: 16px;
+}
+input {
+  min-width: 352px;
+  max-width: 448px;
+  border-color: rgb(229, 231, 235);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+}
+a {
+  color: rgb(107, 114, 128);
+}
+a:hover {
+  color: blue;
+}
+.sign {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.sign-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.end {
+  color: white;
+  background-color: rgb(79, 70, 229);
+  padding: 12px 30px 12px 30px;
+  transition-duration: 0.5s;
+  border-radius: 7px;
+}
+.end:hover {
+  background-color: rgb(67, 56, 202);
+  transition-duration: 0.5s;
+}
